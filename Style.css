@@ -1,0 +1,30 @@
+.div1
+{
+    background-color: red;  
+    text-align: center;
+    font-size: 30px;
+    border: 10px,solid, black;
+}
+#N1
+{
+    display:inline-flex;
+    background-color: bisque;
+    border: 20px,red;
+    text-align: justify;
+    padding: top 30px;
+
+}
+#N2
+{
+ 
+    display:inline-flex;
+    background-color: bisque;
+    text-align: justify;
+    padding: top 30px;
+   
+}
+/*Over Flow*/
+#div1
+{
+    overflow: scroll;
+}
