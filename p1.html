@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Form Validation</title>
+    </head>
+    <body>
+        <form onsubmit="return validateForm(event)">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName">
+        <br>
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName">
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        </form>
+         <script>
+            function validateForm(event)
+            {
+                var firstName = document.getElementById("firstName").value.trim();
+                var lastName = document.getElementById("lastName").value.trim();
+                if(firstName === " " || lastName === "")
+                {
+                    alert("Please fill out all fields.");
+                    return false;
+                }
+                if (firstName.length <2 || lastName.length < 2) 
+                {
+                    alert("First and last names must be at least 2 characters");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+
+
+    </body>
+</html>
